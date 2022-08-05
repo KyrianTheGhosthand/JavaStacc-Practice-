@@ -1,0 +1,52 @@
+.box {
+    width: 280px;
+    height: 160px;
+    background-image: url('./honeybadger.jpg');
+    background-size: contain;
+}
+
+.total-wrapper {
+    width: 800px;
+    padding: 20px;
+
+}
+
+.pixel-box {
+    font-size: 30px;
+    font-family: 'cambria';
+    background-color: cadetblue;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.intro-box {
+    font-size: 40px;
+    font-family: 'Tahoma';
+    margin: 15px;
+    text-align: center;
+}
+
+.intro-emphasize {
+    color: green;
+    text-align: center;
+    font-weight: 400px;
+}
+
+.description-box {
+    font-size: 15px;
+    font-family: 'Tahoma';
+    text-align: center;
+}
+
+.button {
+    border: 2px;
+    border-radius: 10px;
+    color: cornsilk;
+    background-color: black;
+
+}
+
+.button-box {
+    text-align: center;
+}
