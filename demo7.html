@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 7</title>
+    <link rel="icon" type="image/x-icon" href="yep.png" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body{
+        font-family: 'Tahoma';
+        background-color: black;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 4rem 5vw;
+        padding: 0;
+        list-style-type: none;
+      }
+      .card{
+        position: relative;
+        display: block;
+        height: auto;
+        width: 100%
+        border-radius: 25%;
+        overflow: hidden;
+        text-decoration: none;
+        }
+      .image{
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        border-radius: 25%;
+        background-color: yellowgreen;
+        transform: translateY(100%);
+        transition: 0.2s ease-in-out;
+      }
+      .card:hover .overlay {
+        transform: translateY(0);
+      }
+      .header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding: 1em;
+        border-radius: 25%;
+        background-color: yellowgreen;
+        transform: translateY(-100%);
+        transition: 0.2s ease-in-out;
+      }
+      .profile{
+
+      }
+      .card:hover .header {
+        transform: translateY(0);
+      }
+      .name{
+        font-size: 1em;
+        margin: 0 0 0.3em;
+        color: #6a515e;
+      }
+      .status {
+        font-size: 0.8em;
+        color: maroon;
+      }
+      .description {
+        padding: 0 2em 2em;
+        margin: 0;
+        color: maroon;
+        font-family: "Tahoma";
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="cards">
+      <li>
+        <div class="card">
+          <img src="c2s/bayonet.jpg" alt="Bayonet" class="image" />
+          <div class="overlay">
+            <div class="header">
+              <div class="profile">
+                <div class="profile-detail">
+                  <h3 class="name">KEKW</h3>
+                  <span class="status">4 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <p class="description">
+              Last year's LaLiga season was characterised by the failure of any
+              of Real Madrid's rivals to deliver a proper title race. Nowhere
+              was that more evident than at Atletico Madrid, whose bid to defend
+              the 2020-21 crown fell apart in an identity crisis as coach Diego
+              Simeone struggled to find a balance between defence and attack.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="c2s/butterfly.jpg" alt="Bayonet" class="image" />
+          <div class="overlay">
+            <div class="header">
+              <div class="profile">
+                <div class="profile-detail">
+                  <h3 class="name">KEKL</h3>
+                  <span class="status">3 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <p class="description">
+              Gennaro Gattuso's coaching record in Italy (AC Milan and Napoli)
+              was passable, if not exceptional, but Valencia represent a
+              different challenge altogether.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="c2s/skeleton.jpg" alt="Bayonet" class="image" />
+          <div class="overlay">
+            <div class="header">
+              <div class="profile">
+                <div class="profile-detail">
+                  <h3 class="name">KEKK</h3>
+                  <span class="status">6 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <p class="description">
+              If there's a club that has made a virtue of departures, always
+              able to assimilate loss and reinvent itself, that club is Sevilla.
+              And yet, this time feels different: sales are happening because
+              they have to rather than because they are planned per se, both
+              central defenders (Jules Kounde and Diego Carlos) have departed,
+              and they have actually not been very good for quite a while now --
+              look at their results since the turn of the year and they don't
+              lose often at all but they don't win much either.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="c2s/dagger.jpg" alt="Bayonet" class="image" />
+          <div class="overlay">
+            <div class="header">
+              <div class="profile">
+                <div class="profile-detail">
+                  <h3 class="name">KEKO</h3>
+                  <span class="status">8 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <p class="description">
+              Getafe's transfer window -- led by new director of football Ramon
+              Planes -- has been quietly excellent. Defender Domingos Duarte,
+              midfielders Jaime Seoane and Luis Milla and forwards Portu and
+              Borja Mayoral are all sensible additions who will strengthen a
+              team that lost a record seven consecutive games at the start of
+              last season.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
